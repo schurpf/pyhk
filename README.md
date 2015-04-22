@@ -56,6 +56,10 @@ Python IDLE freezes at times. Best use is to call your script directly from the 
 
 After logout or sleep on some machines the hotkeys get triggered by only pressing the modifiers.
 
+##Alternatives
+
+[https://github.com/notifications](https://github.com/notifications)
+
 ##License
 
 Distributed under GNU General Public License version 2.
