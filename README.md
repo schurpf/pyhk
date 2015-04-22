@@ -58,7 +58,7 @@ After logout or sleep on some machines the hotkeys get triggered by only pressin
 
 ##Alternatives
 
-[https://github.com/notifications](https://github.com/notifications)
+[https://github.com/IronManMark20/hooked](https://github.com/IronManMark20/hooked)
 
 ##License
 
