@@ -387,6 +387,9 @@ class pyhk:
                      89: 'Y',
                      90: 'Z',
                      91: 'Lwin',
+                     92: 'Rwin',
+                     93: 'App',
+                     95: 'Sleep',
                      96: 'Numpad0',
                      97: 'Numpad1',
                      98: 'Numpad2',
@@ -440,7 +443,8 @@ class pyhk:
                      1005: 'mouse wheel down',
                      1010: 'Ctrl', #merged hotkeys
                      1011: 'Alt',
-                     1012: 'Shift'}
+                     1012: 'Shift',
+                     1013: 'Win'}
         
         Key2ID = dict(map(lambda x,y: (x,y),ID2Key.values(),ID2Key.keys()))
         
@@ -482,14 +486,18 @@ class pyhk:
         164     1011     Alt   (Lmenu)
         165     1011     Alt   (Rmenu)
         160     1012     Shift (Lshift)
-        161     1012     Shift (Rshift)"""
+        161     1012     Shift (Rshift)
+        91      1013     Win    (Lwin)
+        92      1013     Win    (Rwin)"""
 
         KeyID2MEID = {162:1010,
                       163:1010,
                       164:1011,
                       165:1011,
                       160:1012,
-                      161:1012}
+                      161:1012,
+                      91:1013,
+                      92:1013}
         return KeyID2MEID
 
     def getHotkeyListNoSingleNoModifiers(self):
@@ -497,10 +505,10 @@ class pyhk:
         TempID2Key = self.ID2Key.copy()
 
         #get rid of single events and modifiers
-        getRid = [160,161,162,163,164,165,1000,1004,1005,1010,1011,1012]
+        getRid = [91,92,160,161,162,163,164,165,1000,1004,1005,1010,1011,1012,1013]
 
         #get rid of Lwin and oems
-        moreRid = [91,186,187,188,189,190,191,192,219,220,221,222]
+        moreRid = [186,187,188,189,190,191,192,219,220,221,222]
 
         for item in moreRid:
             getRid.append(item)
