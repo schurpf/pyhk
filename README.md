@@ -1,4 +1,7 @@
-#PYHK
+This project is not maintained anymore. There is a Python 3 version here: [https://github.com/FunkMastaZ/pyhk3](https://github.com/FunkMastaZ/pyhk3)
+
+
+# PYHK
 
 PYHK is python module that allows for simple hotkey registration in any program.
 It extends pyhook to have normal hotkey functionality like autohotkey (AHK) scripts.
@@ -31,35 +34,35 @@ hot.addHotkey(['Ctrl', 'Alt','7'],fun)
 hot.start()
 ```
 
-##Documentation
+## Documentation
 http://www.schurpf.com/python/python-hotkey-module/pyhk-end-user-documentation/
 
-##Old version
+## Old version
 http://www.schurpf.com/python/python-hotkey-module/#download
 
-##Dependencies
+## Dependencies
 [Pyhook](http://sourceforge.net/apps/mediawiki/pyhook/index.php?title=Main_Page)
 
-##Links
+## Links
 
 http://www.schurpf.com/python/python-hotkey-module/                        		- Project home page
 http://www.schurpf.com/python/python-hotkey-module/pyhk-end-user-documentation/     - End user documentation
 
-##Contact Author
+## Contact Author
 
 michael at schurpf dot com
 Please write in English or German only.
 
-##Known Issues
+##K nown Issues
 
 Python IDLE freezes at times. Best use is to call your script directly from the command line with python YOURSCRIPT.py.
 
 After logout or sleep on some machines the hotkeys get triggered by only pressing the modifiers.
 
-##Alternatives
+## Alternatives
 
 [https://github.com/IronManMark20/hooked](https://github.com/IronManMark20/hooked)
 
-##License
+## License
 
 Distributed under GNU General Public License version 2.
